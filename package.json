@@ -1,0 +1,33 @@
+{
+  "name": "scoder",
+  "version": "1.0.0",
+  "description": "scoder website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottys88/scoder-site.git"
+  },
+  "keywords": [
+    "scoder"
+  ],
+  "author": "@scottys88",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottys88/scoder-site/issues"
+  },
+  "homepage": "https://github.com/scottys88/scoder-site#readme",
+  "devDependencies": {
+    "browser-sync": "^2.21.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "requirejs": "^2.3.5",
+    "strava-v3": "^1.14.0"
+  }
+}
