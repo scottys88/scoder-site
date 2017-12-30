@@ -5885,3 +5885,26 @@ a.text-dark:focus, a.text-dark:hover {
       font-size: 200%; }
       #topNav .active li a {
         color: #fff; }
+
+.hero-container .hero-heading {
+  background-color: #000;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  color: #fff; }
+  @media (min-width: 768px) {
+    .hero-container .hero-heading {
+      width: 500px; } }
+
+.hero-container .hero-sub-heading {
+  background-color: grey;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  color: #fff; }
+  @media (min-width: 768px) {
+    .hero-container .hero-sub-heading {
+      width: 300px;
+      margin-top: -20px;
+      margin-left: 250px; } }
+
+body.clients {
+  font-family: 'Roboto', sans-serif; }

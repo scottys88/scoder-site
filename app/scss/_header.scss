@@ -36,3 +36,30 @@
     }
   }
 }
+
+.hero-container {
+  .hero-heading {
+    background-color: #000;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    color: #fff;
+    @include media-breakpoint-up(md) {
+      width: 500px;
+    }
+  }
+  .hero-sub-heading {
+    background-color: grey;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    color: #fff;
+    @include media-breakpoint-up(md) {
+      width: 300px;
+      margin-top: -20px;
+      margin-left: 250px;
+    }
+  }
+
+
+
+
+}

@@ -1,5 +1,3 @@
-
-
 //Menu opening/ closing functionality
 document.getElementById('mobile-menu-toggle').addEventListener("click", function() {
   var menu = document.getElementById('menu');
@@ -29,9 +27,14 @@ function menuAnimate(){
 
 tl
   .staggerFromTo(menuItems, 1, {
-    autoAlpha: 0},
+    autoAlpha: 0,
+    y: 2000
+    },
     {
-      autoAlpha: 1},
+      autoAlpha: 1,
+      y: 0,
+      ease: Back.easeOut.config(0.25)
+    },
       .25);
 
 };
