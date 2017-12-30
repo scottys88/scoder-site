@@ -1,36 +1,37 @@
-requirejs.config({
-    //By default load any module IDs from js/lib
-    baseUrl: 'js',
-    //except, if the module ID starts with "app",
-    //load it from the js/app directory. paths
-    //config is relative to the baseUrl, and
-    //never includes a ".js" extension since
-    //the paths config could be for a directory.
-
-});
-
-// Start the main app logic.
-requirejs(['jquery', 'canvas', 'app/sub'],
-function   ($,        canvas,   sub) {
-    //jQuery, canvas and the app/sub module are all
-    //loaded and can be used here now.
-});
 
 
+//Menu opening/ closing functionality
+document.getElementById('mobile-menu-toggle').addEventListener("click", function() {
+  var menu = document.getElementById('menu');
+  var menuButton = document.getElementById('mobile-menu-toggle');
 
-define(function (require) {
-var strava = require('strava-v3');
-	strava.athlete.get({id:3025424},function(err,payload,limits) {
-    if(!err) {
-        console.log(payload);
-    }
-    else {
-        console.log(err);
-    }
-});
+  console.log(menu);
+
+  if (menu.classList.contains('inactive')){
+    menu.classList.remove('inactive');
+    menu.classList.add('active');
+    menuAnimate();
+  }
+  else {
+    menu.classList.remove('active');
+    menu.classList.add('inactive');
+  }
 
 
 });
 
+//menu opening/ closing animation
+var menuItems = document.getElementsByClassName('menu-link');
 
-	
+var tl = new TimelineMax();
+
+function menuAnimate(){
+
+tl
+  .staggerFromTo(menuItems, 1, {
+    autoAlpha: 0},
+    {
+      autoAlpha: 1},
+      .25);
+
+};
