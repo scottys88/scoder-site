@@ -28,7 +28,7 @@ function menuAnimate(){
 tl
   .staggerFromTo(menuItems, 1, {
     autoAlpha: 0,
-    y: 2000
+    y: 100
     },
     {
       autoAlpha: 1,
