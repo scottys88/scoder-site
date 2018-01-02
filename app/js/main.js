@@ -38,3 +38,21 @@ tl
       .25);
 
 };
+
+//moving hero area
+var heroTimeline = new TimelineMax({paused:true}),
+
+
+
+//Populate your timelines
+heroTimeline
+
+
+
+
+window.onload = function()
+{
+    heroTimeline.play();
+}
+
+
