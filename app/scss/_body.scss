@@ -6,10 +6,32 @@ body.clients {
 	.icon-col {
 		border-radius: 50%;
 		border: 1px solid #000;
-		height: auto;
-		
-		
-		
+		height: auto;		
+	}
+	.sprite-icon-1 {
+		background-image: url(../img/running_man_animation.gif);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #010001;
+		border-radius: 50%;
+		border: 1px solid #000;
+		height: 286px;
+		}
+	.sprite-icon-2 {
+		background-image: url(../img/Family.gif);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #010001;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #010001;
+		border-radius: 50%;
+		border: 1px solid #000;
+		height: 286px;
+		}
 	}
 	
-}
+
