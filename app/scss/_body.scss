@@ -1,36 +1,80 @@
+//    (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+@include media-breakpoint-up(xs)
+@include media-breakpoint-up(sm)
+@include media-breakpoint-up(md)
+@include media-breakpoint-up(lg)
+@include media-breakpoint-up(xl)
+
 body.clients {
   font-family: 'Roboto', sans-serif;
+}
+
+.intro-para {
+	margin: 25px auto 25px auto;
 }
 
 .icons-row {
 	.icon-col {
 		border-radius: 50%;
 		border: 1px solid #000;
-		height: auto;		
+
 	}
 	.sprite-icon-1 {
-		background-image: url(../img/running_man_animation.gif);
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-color: #010001;
-		border-radius: 50%;
-		border: 1px solid #000;
-		height: 286px;
+		@include media-breakpoint-up(xs) {
+			background-image: url(../img/running_man_animation.gif);
+			background-size: auto;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: #010001;
+			border-radius: 50%;
+			border: 1px solid #000;
+			height: 200%;
+			width: 50%;
+			position: relative;
+			margin: auto;
+			display: flex;
+		}
+		@include media-breakpoint-up(md) {
+			background-image: url(../img/running_man_animation.gif);
+			background-size: auto;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: #010001;
+			border-radius: 50%;
+			border: 1px solid #000;
+			height: 210%;
+			width: 75%;
+			}
 		}
 	.sprite-icon-2 {
-		background-image: url(../img/Family.gif);
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-color: #010001;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-color: #010001;
-		border-radius: 50%;
-		border: 1px solid #000;
-		height: 286px;
+		@include media-breakpoint-up(xs) {
+			background-image: url(../img/Family.gif);
+			background-size: auto;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: #010001;
+			background-color: #010001;
+			border-radius: 50%;
+			border: 1px solid #000;
+			height: 200%;
+			width: 50%;
+			position: relative;
+			margin: auto;
+			display: flex;
+			
+		}
+		@include media-breakpoint-up(md) {
+			background-image: url(../img/Family.gif);
+			background-size: auto;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: #010001;
+			background-color: #010001;
+			border-radius: 50%;
+			border: 1px solid #000;
+			height: 210%;
+			width: 75%;
+			}
 		}
 	}
 	

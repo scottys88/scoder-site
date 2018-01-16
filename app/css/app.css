@@ -5895,56 +5895,62 @@ a.text-dark:focus, a.text-dark:hover {
         z-index: 999; }
 
 .hero-container {
-  background-image: url(../img/landscape-with-scott.jpg);
+  background-image: url(../img/landscape-with-scott-cropped.jpg);
   width: 100%;
   height: 75vh;
   background-size: cover;
   background-repeat: repeat-x;
-  animation-name: mountainsMove;
+  /*animation-name: mountainsMove;*/
   animation-duration: 60s;
   animation-iteration-count: infinite;
   z-index: 1; }
   .hero-container .moving-clouds {
     width: 100%;
     height: 50%;
-    opacity: 0.25; }
+    opacity: 0.1;
+    position: absolute; }
   .hero-container .hero-heading {
     background-color: #000;
     padding: 80px 40px 80px 40px;
     text-align: center;
     color: #fff;
-    z-index: 1; }
+    z-index: 1;
+    position: relative;
+    width: 50%;
+    padding: 0;
+    top: 50px;
+    left: 25px; }
     @media (min-width: 768px) {
       .hero-container .hero-heading {
         width: 500px;
-        margin-left: auto;
-        margin-right: auto;
         vertical-align: middle;
-        position: absolute;
+        position: relative;
         top: 50%;
         left: 50%;
+        padding: 80px 40px 80px 40px;
         -webkit-transform: translate(50%, 50%);
         transform: translate(-50%, -50%);
         font-size: 500%;
         z-index: 1; } }
   .hero-container .hero-sub-heading {
     background-color: #333333;
-    padding: 40px 40px 40px 40px;
     text-align: center;
     color: #fff;
-    z-index: 2; }
+    z-index: 2;
+    position: relative;
+    width: 50%;
+    padding: 0;
+    top: 35px;
+    left: 35px; }
     @media (min-width: 768px) {
       .hero-container .hero-sub-heading {
         width: 300px;
-        margin-top: 20px;
-        margin-left: 250px;
-        margin: auto;
-        position: absolute;
-        top: 65%;
+        top: 30%;
         left: 60%;
         -webkit-transform: translate(50%, 50%);
         transform: translate(-50%, -50%);
-        z-index: 1; } }
+        z-index: 1;
+        padding: 40px 40px 40px 40px; } }
 
 @keyframes mountainsMove {
   0% {
@@ -5955,31 +5961,61 @@ a.text-dark:focus, a.text-dark:hover {
 body.clients {
   font-family: 'Roboto', sans-serif; }
 
+.intro-para {
+  margin: 25px auto 25px auto; }
+
 .icons-row .icon-col {
   border-radius: 50%;
-  border: 1px solid #000;
-  height: auto; }
+  border: 1px solid #000; }
 
 .icons-row .sprite-icon-1 {
   background-image: url(../img/running_man_animation.gif);
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #010001;
   border-radius: 50%;
   border: 1px solid #000;
-  height: 286px; }
+  height: 200%;
+  width: 50%;
+  position: relative;
+  margin: auto;
+  display: flex; }
+  @media (min-width: 768px) {
+    .icons-row .sprite-icon-1 {
+      background-image: url(../img/running_man_animation.gif);
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #010001;
+      border-radius: 50%;
+      border: 1px solid #000;
+      height: 210%;
+      width: 75%; } }
 
 .icons-row .sprite-icon-2 {
   background-image: url(../img/Family.gif);
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #010001;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #010001;
   border-radius: 50%;
   border: 1px solid #000;
-  height: 286px; }
+  height: 200%;
+  width: 50%;
+  position: relative;
+  margin: auto;
+  display: flex; }
+  @media (min-width: 768px) {
+    .icons-row .sprite-icon-2 {
+      background-image: url(../img/Family.gif);
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #010001;
+      background-color: #010001;
+      border-radius: 50%;
+      border: 1px solid #000;
+      height: 210%;
+      width: 75%; } }
