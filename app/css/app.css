@@ -5917,9 +5917,10 @@ a.text-dark:focus, a.text-dark:hover {
     z-index: 1;
     position: relative;
     width: 50%;
-    padding: 0;
+    padding: 25px;
     top: 50px;
-    left: 25px; }
+    left: 25px;
+    font-size: 30px; }
     @media (min-width: 768px) {
       .hero-container .hero-heading {
         width: 500px;
@@ -5939,9 +5940,10 @@ a.text-dark:focus, a.text-dark:hover {
     z-index: 2;
     position: relative;
     width: 50%;
-    padding: 0;
+    padding: 10px;
     top: 35px;
-    left: 35px; }
+    left: 45px;
+    font-size: 25px; }
     @media (min-width: 768px) {
       .hero-container .hero-sub-heading {
         width: 300px;
@@ -5950,7 +5952,8 @@ a.text-dark:focus, a.text-dark:hover {
         -webkit-transform: translate(50%, 50%);
         transform: translate(-50%, -50%);
         z-index: 1;
-        padding: 40px 40px 40px 40px; } }
+        padding: 40px 40px 40px 40px;
+        font-size: 40px; } }
 
 @keyframes mountainsMove {
   0% {
@@ -5969,20 +5972,28 @@ body.clients {
   border: 1px solid #000; }
 
 .icons-row .icon-wrapper {
-  margin: 10px; }
-
-.icons-row .sprite-icon-1 {
-  background-image: url(../img/running_man_animation.gif);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #010001;
-  border-radius: 50%;
-  border: 1px solid #000;
-  display: inline-block;
-  padding-bottom: 100%;
-  width: 100%;
-  position: relative; }
+  margin: 70px; }
+  @media (min-width: 576px) {
+    .icons-row .icon-wrapper {
+      margin: 120px; } }
+  @media (min-width: 768px) {
+    .icons-row .icon-wrapper {
+      margin: 25px; } }
+  @media (min-width: 992px) {
+    .icons-row .icon-wrapper {
+      margin: 10px; } }
+  .icons-row .icon-wrapper .sprite-icon-1 {
+    background-image: url(../img/running_man_animation.gif);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #010001;
+    border-radius: 50%;
+    border: 5px solid grey;
+    display: inline-block;
+    padding-bottom: 100%;
+    width: 100%;
+    position: relative; }
 
 .icons-row .sprite-icon-2 {
   background-image: url(../img/Family.gif);
@@ -5991,8 +6002,29 @@ body.clients {
   background-position: center;
   background-color: #010001;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: 5px solid grey;
   display: inline-block;
   padding-bottom: 100%;
   width: 100%;
   position: relative; }
+
+.icons-row .icon-heading {
+  margin: 0 25px 10px 25px; }
+
+.icons-row .icon-para {
+  margin: 0 25px 0 25px; }
+
+.case-studies-container {
+  margin: 100px 0; }
+  .case-studies-container .case-study {
+    padding: 0px; }
+    .case-studies-container .case-study .case-study-image {
+      width: 100%; }
+    .case-studies-container .case-study .case-study-copy {
+      top: 25px;
+      position: absolute;
+      text-align: center;
+      padding: 15px;
+      opacity: 0; }
+      .case-studies-container .case-study .case-study-copy .case-study-copy:hover {
+        opacity: 1; }

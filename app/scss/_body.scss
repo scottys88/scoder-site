@@ -20,8 +20,19 @@ body.clients {
 
 	}
   .icon-wrapper {
-    margin: 10px;
-  }
+    margin: 70px;
+    @include media-breakpoint-up(sm){
+      margin:120px;
+    }
+    @include media-breakpoint-up(md){
+      margin:25px;
+    }
+    @include media-breakpoint-up(lg){
+      margin:10px;
+    }
+
+
+
 
 	.sprite-icon-1 {
 
@@ -31,7 +42,7 @@ body.clients {
 			background-position: center;
 			background-color: #010001;
 			border-radius: 50%;
-			border: 1px solid #000;
+			border: 5px solid grey;
       display: inline-block;
       padding-bottom: 100%;
 			width: 100%;
@@ -39,6 +50,7 @@ body.clients {
 
 
 		}
+  }
 	.sprite-icon-2 {
     background-image: url(../img/Family.gif);
       background-size: auto;
@@ -46,12 +58,48 @@ body.clients {
       background-position: center;
       background-color: #010001;
       border-radius: 50%;
-      border: 1px solid #000;
+      border: 5px solid grey;
       display: inline-block;
       padding-bottom: 100%;
       width: 100%;
       position: relative;
-
-
 		}
+    .icon-heading {
+      margin: 0 25px 10px 25px;
+    }
+    .icon-para {
+      margin: 0 25px 0 25px;
+    }
 	}
+
+
+.case-studies-container {
+  margin: 100px 0;
+  .case-study {
+    padding: 0px;
+
+    .case-study-image {
+        width: 100%;
+      }
+      .case-study-copy {
+
+        top: 25px;
+        position: absolute;
+        text-align: center;
+        padding: 15px;
+        opacity: 0;
+
+      .case-study-copy:hover {
+        opacity: 1;
+      }
+
+
+        .case-study-heading {
+
+        }
+        .case-study-para {
+
+        }
+      }
+    }
+  }
