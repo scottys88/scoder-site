@@ -3,8 +3,6 @@ document.getElementById('mobile-menu-toggle').addEventListener("click", function
   var menu = document.getElementById('menu');
   var menuButton = document.getElementById('mobile-menu-toggle');
 
-  console.log(menu);
-
   if (menu.classList.contains('inactive')){
     menu.classList.remove('inactive');
     menu.classList.add('active');
@@ -14,8 +12,6 @@ document.getElementById('mobile-menu-toggle').addEventListener("click", function
     menu.classList.remove('active');
     menu.classList.add('inactive');
   }
-
-
 });
 
 //menu opening/ closing animation
@@ -36,23 +32,21 @@ tl
       ease: Back.easeOut.config(0.25)
     },
       .25);
-
 };
 
 //moving hero area
 var heroTimeline = new TimelineMax({paused:true}),
 
-
-
 //Populate your timelines
 heroTimeline
-
-
-
 
 window.onload = function()
 {
     heroTimeline.play();
 }
 
+//hover function on the spot
 
+$('.case-studies-container:hover .case-study-copy ').hover(function() {
+  console.log('Yo');
+});

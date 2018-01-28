@@ -6016,6 +6016,8 @@ body.clients {
 
 .case-studies-container {
   margin: 100px 0; }
+  .case-studies-container .home-heading {
+    text-align: center; }
   .case-studies-container .case-study {
     padding: 0px; }
     .case-studies-container .case-study .case-study-image {
@@ -6025,6 +6027,14 @@ body.clients {
       position: absolute;
       text-align: center;
       padding: 15px;
-      opacity: 0; }
-      .case-studies-container .case-study .case-study-copy .case-study-copy:hover {
-        opacity: 1; }
+      visibility: hidden; }
+    .case-studies-container .case-study .case-study-button {
+      padding: 15px;
+      background-color: #010001;
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      color: #fff; }
+
+.case-studies-container:hover .case-study-copy {
+  visibility: visible; }

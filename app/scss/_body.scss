@@ -75,6 +75,9 @@ body.clients {
 
 .case-studies-container {
   margin: 100px 0;
+  .home-heading {
+    text-align: center;
+  }
   .case-study {
     padding: 0px;
 
@@ -87,10 +90,7 @@ body.clients {
         position: absolute;
         text-align: center;
         padding: 15px;
-        opacity: 0;
-
-      .case-study-copy:hover {
-        opacity: 1;
+        visibility: hidden;
       }
 
 
@@ -100,6 +100,16 @@ body.clients {
         .case-study-para {
 
         }
+        .case-study-button {
+          padding: 15px;
+          background-color: #010001;
+          width: 50%;
+          margin: auto;
+          text-align: center;
+          color: #fff;
+        }
       }
     }
+  .case-studies-container:hover .case-study-copy {
+      visibility: visible;
   }
