@@ -6,7 +6,7 @@ document.getElementById('mobile-menu-toggle').addEventListener("click", function
   if (menu.classList.contains('inactive')){
     menu.classList.remove('inactive');
     menu.classList.add('active');
-    menuAnimate();
+    menuAnimate(); //function for this is below
   }
   else {
     menu.classList.remove('active');
@@ -16,11 +16,9 @@ document.getElementById('mobile-menu-toggle').addEventListener("click", function
 
 //menu opening/ closing animation
 var menuItems = document.getElementsByClassName('menu-link');
-
 var tl = new TimelineMax();
 
 function menuAnimate(){
-
 tl
   .staggerFromTo(menuItems, 1, {
     autoAlpha: 0,
@@ -47,6 +45,14 @@ window.onload = function()
 
 //hover function on the spot
 
-$('.case-studies-container:hover .case-study-copy ').hover(function() {
-  console.log('Yo');
+$(".case-study").mouseover(function() {
+	console.log("mouse enter");
+    $(this).children('.case-study-copy').css('opacity', 1);
+	$(this).children('.case-study-image').css('filter', 'grayscale(150%)');
+}).mouseout(function() {
+	console.log("mouse out");
+    $(this).children('.case-study-copy').css('opacity', 0);
+	$(this).children('.case-study-image').css('filter', 'grayscale(0%)');
 });
+
+

@@ -14,6 +14,11 @@ body.clients {
 }
 
 .icons-row {
+	background-color: rgb(242, 242, 242);
+	padding-bottom: 50px;
+	@include media-breakpoint-up(md) {
+		padding: 25px 0 25px 0;
+	}
 	.icon-col {
 		border-radius: 50%;
 		border: 1px solid #000;
@@ -85,13 +90,32 @@ body.clients {
         width: 100%;
       }
       .case-study-copy {
-
         top: 25px;
         position: absolute;
         text-align: center;
-        padding: 15px;
-        visibility: hidden;
+        padding: 25px;
+        opacity: 0;
+		color: #fff;
+		visibility: hidden;
+		   @include media-breakpoint-up(md) {
+			  visibility: visible;
+		  }
+		  a {
+			  color: #fff;
+			  text-decoration: none;
+		  }
       }
+	  .mobile-case-study-copy {
+		  visibility: visible;
+		  padding: 10px 25px 10px 25px;
+		  .case-study-button {
+			  margin-bottom: 15px;
+			  
+		  }
+		  @include media-breakpoint-up(md) {
+			  visibility: hidden;
+		  }
+	  }
 
 
         .case-study-heading {
@@ -110,6 +134,8 @@ body.clients {
         }
       }
     }
+/*
   .case-studies-container:hover .case-study-copy {
       visibility: visible;
   }
+*/

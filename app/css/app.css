@@ -5867,7 +5867,9 @@ a.text-dark:focus, a.text-dark:hover {
 
 #topNav {
   background-color: #000;
-  z-index: 999; }
+  z-index: 999;
+  position: fixed;
+  width: 100%; }
   #topNav .menuButton {
     float: right;
     font-size: 300%;
@@ -5909,51 +5911,51 @@ a.text-dark:focus, a.text-dark:hover {
     height: 50%;
     opacity: 0.1;
     position: absolute; }
-  .hero-container .hero-heading {
-    background-color: #000;
-    padding: 80px 40px 80px 40px;
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-    position: relative;
-    width: 50%;
-    padding: 25px;
-    top: 50px;
-    left: 25px;
-    font-size: 30px; }
-    @media (min-width: 768px) {
-      .hero-container .hero-heading {
-        width: 500px;
-        vertical-align: middle;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        padding: 80px 40px 80px 40px;
-        -webkit-transform: translate(50%, 50%);
-        transform: translate(-50%, -50%);
-        font-size: 500%;
-        z-index: 1; } }
-  .hero-container .hero-sub-heading {
-    background-color: #333333;
-    text-align: center;
-    color: #fff;
-    z-index: 2;
-    position: relative;
-    width: 50%;
-    padding: 10px;
-    top: 35px;
-    left: 45px;
-    font-size: 25px; }
-    @media (min-width: 768px) {
-      .hero-container .hero-sub-heading {
-        width: 300px;
-        top: 30%;
-        left: 60%;
-        -webkit-transform: translate(50%, 50%);
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        padding: 40px 40px 40px 40px;
-        font-size: 40px; } }
+  .hero-container .hero-heading-container {
+    padding-top: 75px;
+    padding-top: 50px; }
+    .hero-container .hero-heading-container .hero-heading {
+      background-color: #000;
+      text-align: center;
+      color: #fff;
+      z-index: 1;
+      position: relative;
+      width: 50%;
+      padding: 25px;
+      top: 50px;
+      left: 25px;
+      font-size: 30px; }
+      @media (min-width: 768px) {
+        .hero-container .hero-heading-container .hero-heading {
+          width: 500px;
+          vertical-align: middle;
+          position: relative;
+          left: 30%;
+          padding: 80px 40px 80px 40px;
+          font-size: 500%;
+          z-index: 1; } }
+    .hero-container .hero-heading-container .hero-sub-heading {
+      background-color: #333333;
+      text-align: center;
+      color: #fff;
+      z-index: 2;
+      position: relative;
+      width: 50%;
+      padding: 10px;
+      top: 35px;
+      left: 45px;
+      font-size: 25px; }
+      @media (min-width: 768px) {
+        .hero-container .hero-heading-container .hero-sub-heading {
+          width: 300px;
+          top: 30%;
+          left: 60%;
+          -webkit-transform: translate(50%, 50%);
+          transform: translate(-50%, -50%);
+          z-index: 1;
+          padding: 40px 40px 40px 40px;
+          font-size: 40px;
+          margin-top: 30px; } }
 
 @keyframes mountainsMove {
   0% {
@@ -5967,23 +5969,40 @@ body.clients {
 .intro-para {
   margin: 25px auto 25px auto; }
 
-.icons-row .icon-col {
-  border-radius: 50%;
-  border: 1px solid #000; }
-
-.icons-row .icon-wrapper {
-  margin: 70px; }
-  @media (min-width: 576px) {
-    .icons-row .icon-wrapper {
-      margin: 120px; } }
+.icons-row {
+  background-color: #f2f2f2;
+  padding-bottom: 50px; }
   @media (min-width: 768px) {
-    .icons-row .icon-wrapper {
-      margin: 25px; } }
-  @media (min-width: 992px) {
-    .icons-row .icon-wrapper {
-      margin: 10px; } }
-  .icons-row .icon-wrapper .sprite-icon-1 {
-    background-image: url(../img/running_man_animation.gif);
+    .icons-row {
+      padding: 25px 0 25px 0; } }
+  .icons-row .icon-col {
+    border-radius: 50%;
+    border: 1px solid #000; }
+  .icons-row .icon-wrapper {
+    margin: 70px; }
+    @media (min-width: 576px) {
+      .icons-row .icon-wrapper {
+        margin: 120px; } }
+    @media (min-width: 768px) {
+      .icons-row .icon-wrapper {
+        margin: 25px; } }
+    @media (min-width: 992px) {
+      .icons-row .icon-wrapper {
+        margin: 10px; } }
+    .icons-row .icon-wrapper .sprite-icon-1 {
+      background-image: url(../img/running_man_animation.gif);
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #010001;
+      border-radius: 50%;
+      border: 5px solid grey;
+      display: inline-block;
+      padding-bottom: 100%;
+      width: 100%;
+      position: relative; }
+  .icons-row .sprite-icon-2 {
+    background-image: url(../img/Family.gif);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -5994,25 +6013,10 @@ body.clients {
     padding-bottom: 100%;
     width: 100%;
     position: relative; }
-
-.icons-row .sprite-icon-2 {
-  background-image: url(../img/Family.gif);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #010001;
-  border-radius: 50%;
-  border: 5px solid grey;
-  display: inline-block;
-  padding-bottom: 100%;
-  width: 100%;
-  position: relative; }
-
-.icons-row .icon-heading {
-  margin: 0 25px 10px 25px; }
-
-.icons-row .icon-para {
-  margin: 0 25px 0 25px; }
+  .icons-row .icon-heading {
+    margin: 0 25px 10px 25px; }
+  .icons-row .icon-para {
+    margin: 0 25px 0 25px; }
 
 .case-studies-container {
   margin: 100px 0; }
@@ -6026,8 +6030,24 @@ body.clients {
       top: 25px;
       position: absolute;
       text-align: center;
-      padding: 15px;
+      padding: 25px;
+      opacity: 0;
+      color: #fff;
       visibility: hidden; }
+      @media (min-width: 768px) {
+        .case-studies-container .case-study .case-study-copy {
+          visibility: visible; } }
+      .case-studies-container .case-study .case-study-copy a {
+        color: #fff;
+        text-decoration: none; }
+    .case-studies-container .case-study .mobile-case-study-copy {
+      visibility: visible;
+      padding: 10px 25px 10px 25px; }
+      .case-studies-container .case-study .mobile-case-study-copy .case-study-button {
+        margin-bottom: 15px; }
+      @media (min-width: 768px) {
+        .case-studies-container .case-study .mobile-case-study-copy {
+          visibility: hidden; } }
     .case-studies-container .case-study .case-study-button {
       padding: 15px;
       background-color: #010001;
@@ -6036,5 +6056,8 @@ body.clients {
       text-align: center;
       color: #fff; }
 
-.case-studies-container:hover .case-study-copy {
-  visibility: visible; }
+/*
+  .case-studies-container:hover .case-study-copy {
+      visibility: visible;
+  }
+*/
