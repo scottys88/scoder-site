@@ -55,7 +55,7 @@ body.clients {
 
 
 		}
-  }
+  
 	.sprite-icon-2 {
     background-image: url(../img/Family.gif);
       background-size: auto;
@@ -69,6 +69,20 @@ body.clients {
       width: 100%;
       position: relative;
 		}
+	  	.sprite-icon-3 {
+    background-image: url(../img/hello.gif);
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #010001;
+      border-radius: 50%;
+      border: 5px solid grey;
+      display: inline-block;
+      padding-bottom: 100%;
+      width: 100%;
+      position: relative;
+		}
+	}
     .icon-heading {
       margin: 0 25px 10px 25px;
     }
