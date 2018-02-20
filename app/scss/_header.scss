@@ -12,6 +12,7 @@
   z-index: 999;
   position: fixed;
   width: 100%;
+  
   .menuButton {
     float: right;
     font-size: 300%;
@@ -29,9 +30,7 @@
     display: inline-block;
     text-align: center;
     list-style: none;
-	  ul {
-		  z-index: 999;
-	  }
+	padding-left: 0;
 
 		  li {
 		  text-align: center;
@@ -47,6 +46,10 @@
 
 		}
   }
+		  ul {
+		  z-index: 999;
+		  padding: none;
+	  }
 }
 
 .hero-container {

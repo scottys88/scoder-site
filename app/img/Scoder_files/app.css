@@ -6068,13 +6068,7 @@ body.clients {
     margin: 0 25px 0 25px; }
 
 .case-studies-container {
-  margin: 100px 0 0 0; }
-  @media (min-width: 1200px) {
-    .case-studies-container .case-studies {
-      background-image: url(../img/case-study-background.jpg);
-      background-position: 50% 25%;
-      background-size: cover;
-      background-attachment: fixed; } }
+  margin: 100px 0; }
   .case-studies-container .home-heading {
     text-align: center; }
   .case-studies-container .case-study {
@@ -6103,9 +6097,6 @@ body.clients {
       @media (min-width: 1200px) {
         .case-studies-container .case-study .mobile-case-study-copy {
           visibility: hidden; } }
-    @media (min-width: 1200px) {
-      .case-studies-container .case-study .case-study-para {
-        font-size: 100%; } }
     .case-studies-container .case-study .case-study-button {
       padding: 15px;
       background-color: #010001;
@@ -6127,34 +6118,17 @@ body.clients {
   .footer .contact-links {
     position: relative;
     text-align: center;
-    font-size: 250%;
-    padding-top: 5px; }
+    font-size: 250%; }
     .footer .contact-links .git-hub-footer {
       color: #fff;
       position: absolute;
       left: 50%; }
-      @media (min-width: 768px) {
-        .footer .contact-links .git-hub-footer {
-          left: 50%; } }
-      .footer .contact-links .git-hub-footer i {
-        color: #fff; }
     .footer .contact-links .phone-footer {
       color: #fff;
       position: absolute;
-      left: 25%; }
-      @media (min-width: 768px) {
-        .footer .contact-links .phone-footer {
-          left: 40%;
-          padding-right: 80px; } }
-      .footer .contact-links .phone-footer i {
-        color: #fff; }
+      left: 50%;
+      padding-left: 100px; }
     .footer .contact-links .email-footer {
       color: #fff;
       position: absolute;
-      left: 75%; }
-      @media (min-width: 768px) {
-        .footer .contact-links .email-footer {
-          left: 55%;
-          padding-left: 80px; } }
-      .footer .contact-links .email-footer i {
-        color: #fff; }
+      left: 50%; }

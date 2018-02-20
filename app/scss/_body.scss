@@ -79,7 +79,18 @@ body.clients {
 
 
 .case-studies-container {
-  margin: 100px 0;
+  margin: 100px 0 0 0;
+	
+	.case-studies {
+			@include media-breakpoint-up(xl) {
+		background-image: url(../img/case-study-background.jpg);
+		background-position: 50% 25%;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	}
+  
+	
   .home-heading {
     text-align: center;
   }
@@ -122,7 +133,9 @@ body.clients {
 
         }
         .case-study-para {
-
+			@include media-breakpoint-up(xl) {
+				font-size: 100%;
+			}
         }
         .case-study-button {
           padding: 15px;
