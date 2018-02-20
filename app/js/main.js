@@ -1,5 +1,5 @@
 //Menu opening/ closing functionality
-document.getElementById('mobile-menu-toggle').addEventListener("click", function() {
+/*document.getElementById('mobile-menu-toggle').addEventListener("click", function() {
   var menu = document.getElementById('menu');
   var menuButton = document.getElementById('mobile-menu-toggle');
 
@@ -12,7 +12,18 @@ document.getElementById('mobile-menu-toggle').addEventListener("click", function
     menu.classList.remove('active');
     menu.classList.add('inactive');
   }
+});*/
+
+
+$(document).ready(function(){
+	$('.toggle-btn').click(function(){
+		console.log("clicked");
+		$(this).toggleClass('open');
+		$('.menu').toggleClass('active');
+		menuAnimate();
+	});
 });
+
 
 //menu opening/ closing animation
 var menuItems = document.getElementsByClassName('menu-link');

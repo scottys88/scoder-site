@@ -5963,6 +5963,53 @@ a.text-dark:focus, a.text-dark:hover {
   100% {
     background-position: 100% 0%; } }
 
+.toggle-btn {
+  background: #000;
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+  padding-left: 85px; }
+
+.toggle-bar {
+  width: 44px;
+  height: 4px;
+  background: #fff;
+  position: relative;
+  top: 25px;
+  margin: 0 auto; }
+
+.toggle-bar:before,
+.toggle-bar:after {
+  width: 44px;
+  height: 4px;
+  background: #fff;
+  content: '';
+  position: absolute; }
+
+.toggle-bar:before {
+  top: -12px; }
+
+.toggle-bar:after {
+  top: 12px; }
+
+.toggle-btn.open .toggle-bar {
+  background: inherit; }
+
+.toggle-btn.open .toggle-bar:before,
+.toggle-btn.open .toggle-bar:after {
+  top: 0; }
+
+.toggle-btn.open .toggle-bar:before {
+  transform: rotate(45deg); }
+
+.toggle-btn.open .toggle-bar:after {
+  transform: rotate(-45deg); }
+
+.toggle-bar,
+.toggle-bar:before,
+.toggle-bar:after {
+  transition: all 0.35s; }
+
 body.clients {
   font-family: 'Roboto', sans-serif; }
 
