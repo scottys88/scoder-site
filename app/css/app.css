@@ -6081,7 +6081,7 @@ body.clients {
       opacity: 0;
       color: #fff;
       visibility: hidden; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .case-studies-container .case-study .case-study-copy {
           visibility: visible; } }
       .case-studies-container .case-study .case-study-copy a {
@@ -6092,7 +6092,7 @@ body.clients {
       padding: 10px 25px 10px 25px; }
       .case-studies-container .case-study .mobile-case-study-copy .case-study-button {
         margin-bottom: 15px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1200px) {
         .case-studies-container .case-study .mobile-case-study-copy {
           visibility: hidden; } }
     .case-studies-container .case-study .case-study-button {
