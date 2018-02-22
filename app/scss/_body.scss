@@ -5,6 +5,17 @@
 @include media-breakpoint-up(lg)
 @include media-breakpoint-up(xl)
 
+
+	h1, h2, h3, li, p, a {
+		font-family: 'Anonymous Pro', monospace;
+}
+	
+body {
+		overflow-x: hidden;
+		width: 100%;
+}
+
+	
 body.clients {
   font-family: 'Roboto', sans-serif;
 }
